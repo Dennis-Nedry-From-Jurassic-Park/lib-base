@@ -6,7 +6,7 @@
     "scripts": {
         "yarn:clean": "yarn cache clean",
         "build:all": "yarn workspaces foreach run build",
-        "api-ti-orders": "ts-node -r tsconfig-paths/register apps/ms-atr/src/api.ti.orders.ts"
+        "api-ti-orders": "src/node_modules/.bin/ts-node -r tsconfig-paths/register apps/ms-atr/src/api.ti.orders.ts"
     },
     "dependencies": {
         "dotenv": "^16.0.3",
