@@ -74,17 +74,9 @@
     "*.test.ts"
   ],
   "paths": {
-    "@ms-cron/*": [
-      "apps/ms-cron/src/*"
+    "src/*": [
+      "src/*", "**/*"
     ],
-    "@ms-atr/*": [
-      "apps/ms-atr/src/*"
-    ],
-    "@ms-prepare-candles-spbe-exchange-main-session/*": [
-      "apps/ms-change-price-strategy/src/*"
-    ],
-    "@ms-trading-calendar/*": [
-      "apps/ms-trading-calendar/src/*"
-    ]
+
   }
 }
