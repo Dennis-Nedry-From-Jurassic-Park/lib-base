@@ -17,6 +17,7 @@
         "test": "jest",
         "build:all": "yarn workspaces foreach run build",
         "api-ti-orders": "src/node_modules/.bin/ts-node -r tsconfig-paths/register apps/ms-atr/src/api.ti.orders.ts",
+        "check": "ts-node -r tsconfig-paths/register src/datetime/dt.ts",
         "vault": "ts-node -r tsconfig-paths/register src/vault/vault.ts"
     },
     "dependencies": {
@@ -34,6 +35,7 @@
         "jest-ts-auto-mock": "^2.1.0",
         "ts-auto-mock": "^3.6.4",
         "ts-jest": "^29.0.5",
+        "tsconfig-paths": "^4.1.2",
         "ttypescript": "^1.5.15",
         "typescript": "^4.7.4"
     },
