@@ -1,9 +1,14 @@
 //import addDays from 'date-fns/utc/addDays'
-const {addDays} = require('date-fns');
+import {addDays, isBefore} from 'date-fns'
+//const {addDays} = require('date-fns');
 
 export const add_days = async (datetime: string, days: number) => {
     const dt = new Date(datetime);
-    return await addDays(dt, days)
+    return addDays(dt, days);
+}
+
+export const is_before = async (date: Date | number, dateToCompare: Date | number) => {
+    return isBefore(date, dateToCompare)
 }
 
 const exec = async () => {
