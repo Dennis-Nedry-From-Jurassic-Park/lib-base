@@ -4,21 +4,25 @@
     "private": true,
     "license": "Apache-2.0",
     "scripts": {
+        "------------ git ------------": "------------ git ------------",
+        "git submodule add ms-auth": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-auth.git shared/ms-auth",
+        "git submodule add ms-base": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-base.git shared/ms-base",
         "git submodule update": "git submodule update --init --recursive && git submodule foreach --recursive git pull origin main",
-        "yarn:workspace-tools": "yarn plugin import workspace-tools",
-        "yarn:install": "yarn install",
-        "yarn:add:package": "yarn workspace backend add tinkoff-invest-api",
-        "yarn:switch:to:berry": "yarn set version berry",
-        "yarn:switch:to:classic": "yarn set version classic",
+        "------------ pnpm ------------": "----------- pnpm ------------",
+        "pnpm:add": "npx pnpm add -g pnpm",
+        "pnpm:setup": "npx pnpm setup",
+        "pnpm:install": "npx pnpm install",
+        "----------- docker -----------": "----------- docker -----------",
+
         "yarn:build:all": "yarn install && yarn workspaces foreach run build",
-        "yarn:clean": "yarn cache clean",
         "lint": "eslint --color --fix --ext .ts,.js,.jsx packages/backend/apps/ms-src/src",
         "lint-q": "eslint --color --fix --quiet --ext .ts,.js,.jsx packages/backend/apps/ms-cron/src",
         "test": "jest",
         "build:all": "yarn workspaces foreach run build",
         "api-ti-orders": "src/node_modules/.bin/ts-node -r tsconfig-paths/register apps/ms-atr/src/api.ti.orders.ts",
         "check": "ts-node -r tsconfig-paths/register src/datetime/dt.ts",
-        "vault": "ts-node -r tsconfig-paths/register src/vault/vault.ts"
+        "vault": "ts-node -r tsconfig-paths/register src/vault/vault.ts",
+        "main": "ts-node -r tsconfig-paths/register src/main.ts"
     },
     "dependencies": {
         "date-fns": "^2.29.3",
@@ -39,5 +43,5 @@
         "ttypescript": "^1.5.15",
         "typescript": "^4.7.4"
     },
-    "packageManager": "yarn@3.3.1"
+    "packageManager": "^pnpm@7.26.3"
 }
