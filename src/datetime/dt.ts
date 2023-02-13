@@ -1,6 +1,9 @@
-import {addDays, format as fmt, isBefore} from 'date-fns'
+import {addDays} from 'date-fns'
+import format from "date-fns/format";
 
 export const add_days = async (datetime: string, days: number) => {
     const dt = new Date(datetime);
     return addDays(dt, days);
 }
+
+export const now_iso = () => format(new Date(), "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
