@@ -1,5 +1,5 @@
 import {addDays} from 'date-fns'
-import format from "date-fns/format";
+var format = require('date-fns/format')
 
 export const add_days = async (datetime: string, days: number) => {
     const dt = new Date(datetime);
