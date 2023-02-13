@@ -59,6 +59,9 @@
     ],
     "pretty": true
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     ".cache.ti.api.gs.ru.shares.report",
     "node_modules",
