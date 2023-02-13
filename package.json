@@ -10,6 +10,7 @@
         "git submodule update": "git submodule update --init --recursive && git submodule foreach --recursive git pull origin main",
         "------------ pnpm ------------": "----------- pnpm ------------",
         "pnpm:add": "npx pnpm add -g pnpm",
+        "pnpm:add:package": "npx pnpm add pino",
         "pnpm:setup": "npx pnpm setup",
         "pnpm:install": "npx pnpm install",
         "----------- docker -----------": "----------- docker -----------",
@@ -27,6 +28,7 @@
     "dependencies": {
         "date-fns": "^2.29.3",
         "dotenv": "^16.0.3",
+        "pino": "8.10.0",
         "path": "^0.12.7",
         "telegraf": "^4.11.2",
         "ts-node": "^10.9.1",
