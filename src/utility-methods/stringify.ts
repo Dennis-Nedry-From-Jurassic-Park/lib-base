@@ -1,3 +1,5 @@
+export const stringify = require('safe-stable-stringify')
+
 export const prettyJSONbigint = (response:any): string => {
     return JSON.stringify(response, (_, v) => typeof v === 'bigint' ? v.toString() : v)
 }
