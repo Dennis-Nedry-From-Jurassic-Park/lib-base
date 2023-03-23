@@ -1,9 +1,6 @@
-import {DAY} from "./constants/date.time.formats";
-import {logger} from "./logger/pino";
+import {now_utc} from "./datetime/dt";
 
-console.log(DAY);
-
-logger.info('1111')
+console.log(now_utc());
 
 let obj: any[] = []
 
