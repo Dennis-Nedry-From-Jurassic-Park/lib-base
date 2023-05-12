@@ -7,6 +7,8 @@ const fs = require('fs');
 
 import axios from "axios";
 
+export const get_app_root_dir = () => process.cwd()
+
 export function getAppRootDir() {
     let currentDir = __dirname
     while (!fs.existsSync(path.join(currentDir, '.gitignore'))) {
