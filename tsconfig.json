@@ -9,6 +9,7 @@
     "diagnostics": false,
     "extendedDiagnostics": true,
     "esModuleInterop": true,
+    "composite": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",                              /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
     "lib": [
