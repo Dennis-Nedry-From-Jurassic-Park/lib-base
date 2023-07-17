@@ -1,12 +1,11 @@
 {
-    "name": "ms-base",
+    "name": "lib-base",
     "version": "0.0.1",
     "private": true,
     "license": "Apache-2.0",
     "scripts": {
         "------------ git ------------": "------------ git ------------",
-        "git submodule add ms-auth": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-auth.git shared/ms-auth",
-        "git submodule add ms-base": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-base.git shared/ms-base",
+        "git submodule add lib-*": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/lib-*.git shared/lib-*",
         "git submodule update": "git submodule update --init --recursive && git submodule foreach --recursive git pull origin main",
         "------------ pnpm ------------": "----------- pnpm ------------",
         "pnpm:add": "npx pnpm add -g pnpm",
