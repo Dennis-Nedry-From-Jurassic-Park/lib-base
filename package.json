@@ -3,6 +3,9 @@
     "version": "0.0.1",
     "private": true,
     "license": "Apache-2.0",
+    "main": "./dist/index.js",
+    "source": "./index.ts",
+    "types": "./index.ts",
     "scripts": {
         "------------ git ------------": "------------ git ------------",
         "git submodule add lib-*": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/lib-*.git shared/lib-*",

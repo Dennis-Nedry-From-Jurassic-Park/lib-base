@@ -1,9 +1,11 @@
 import {now_utc} from "./datetime/dt";
+import {DAY} from "./constants/date.time.formats";
 
 console.log(now_utc());
 
 let obj: any[] = []
-
+console.log(DAY);
+/*
 for(;;) {
     let new_obj = {
         a: '1',
@@ -21,3 +23,4 @@ for(;;) {
         break;
     }
 }
+ */
