@@ -1,4 +1,5 @@
 { /* https://www.typescriptlang.org/tsconfig */
+  "extends": "../../tsconfig.base.json",
   "compileOnSave": false,                           /* Setting a top-level property compileOnSave signals to the IDE to generate all files for a given tsconfig.json upon saving. */
   "compilerOptions": {                              /* https://www.typescriptlang.org/tsconfig */
     "allowJs": true,                                /* Allow javascript files to be compiled. */
