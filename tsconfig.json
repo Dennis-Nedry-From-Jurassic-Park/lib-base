@@ -7,7 +7,7 @@
     "checkJs": false,                               /* Report errors in .js files. */
     "composite": true,
     "declaration": true,                            /* Generates corresponding '.d.ts' file. */
-
+    "declarationMap": true,
     "diagnostics": false,
     "extendedDiagnostics": false,
     "esModuleInterop": false,                        /* create helpers __importStar и __importDefault to ensure compatibility with the Babel ecosystem and turn on allowSyntheticDefaultImports for compatibility with the type system */
