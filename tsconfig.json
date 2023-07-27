@@ -7,6 +7,7 @@
     "checkJs": false,                               /* Report errors in .js files. */
     "composite": true,
     "declaration": true,                            /* Generates corresponding '.d.ts' file. */
+
     "diagnostics": false,
     "extendedDiagnostics": false,
     "esModuleInterop": false,                        /* create helpers __importStar и __importDefault to ensure compatibility with the Babel ecosystem and turn on allowSyntheticDefaultImports for compatibility with the type system */
@@ -27,7 +28,8 @@
     "isolatedModules": false,                       /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
     "incremental": true,                            /* Tells TypeScript to save information about the project graph from the last compilation to files stored on disk. This creates a series of .tsbuildinfo files in the same folder as your compilation output. */
     "importHelpers": true,                          /* Import emit helpers from 'tslib'. */
-    "outDir": "../../dist/shared/lib-base",                               /* Redirect output structure to the directory. */
+    //"outDir": "../../dist/shared/lib-base",                               /* Redirect output structure to the directory. */
+    "outDir": "./dist",                               /* Redirect output structure to the directory. */
                                                     /* Base directory to resolve non-absolute module names. */
     "emitDecoratorMetadata": true,                  /* Enables experimental support for emitting type metadata for decorators. */
     "experimentalDecorators": true,                 /* Enables experimental support for ES7 decorators. */
