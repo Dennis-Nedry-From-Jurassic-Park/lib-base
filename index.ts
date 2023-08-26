@@ -1,3 +1,4 @@
+export * from './src/array/filter';
 export * from './src/constants/exchange';
 export * from './src/constants/date.time.formats';
 export * from './src/utility-methods/delay';
