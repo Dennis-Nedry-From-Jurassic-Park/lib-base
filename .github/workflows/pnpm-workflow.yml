@@ -33,6 +33,7 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: "/deploy/"
           EXCLUDE: "/dist/, /node_modules/"
+          
 #          SCRIPT_BEFORE: |
 #            whoami
 #            ls -al
