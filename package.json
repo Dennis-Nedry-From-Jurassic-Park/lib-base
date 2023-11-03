@@ -22,6 +22,7 @@
         "lint": "eslint --color --fix --ext .ts,.js,.jsx packages/backend/apps/ms-src/src",
         "lint-q": "eslint --color --fix --quiet --ext .ts,.js,.jsx packages/backend/apps/ms-cron/src",
         "test": "jest",
+        "pnpm:test": "pnpm test",
         "build": "tsc -b .",
         "build:all": "yarn workspaces foreach run build",
         "api-ti-orders": "src/node_modules/.bin/ts-node -r tsconfig-paths/register apps/ms-atr/src/api.ti.orders.ts",
