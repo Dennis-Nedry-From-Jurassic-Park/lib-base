@@ -33,11 +33,11 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: "/deploy/lib-base"
           EXCLUDE: "/dist/, /node_modules/"
-          SCRIPT_BEFORE: |
-            whoami
-            ls -al
-          SCRIPT_AFTER: |
-            whoami
-            ls -al
-            echo $RSYNC_STDOUT
+#          SCRIPT_BEFORE: |
+#            whoami
+#            ls -al
+#          SCRIPT_AFTER: |
+#            whoami
+#            ls -al
+#            echo $RSYNC_STDOUT
 
