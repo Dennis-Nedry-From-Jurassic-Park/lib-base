@@ -31,9 +31,9 @@ jobs:
           SOURCE: "dist/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: "/deploy/lib-base"
+          TARGET: "/deploy/"
           EXCLUDE: "/dist/, /node_modules/"
-          
+
 #          SCRIPT_BEFORE: |
 #            whoami
 #            ls -al
