@@ -22,6 +22,7 @@
         "lint": "eslint --color --fix --ext .ts,.js,.jsx packages/backend/apps/ms-src/src",
         "lint-q": "eslint --color --fix --quiet --ext .ts,.js,.jsx packages/backend/apps/ms-cron/src",
         "test": "jest",
+        "pnpm:test": "pnpm test",
         "build": "tsc -b .",
         "build:all": "yarn workspaces foreach run build",
         "api-ti-orders": "src/node_modules/.bin/ts-node -r tsconfig-paths/register apps/ms-atr/src/api.ti.orders.ts",
@@ -30,28 +31,28 @@
         "main": "ts-node -r tsconfig-paths/register src/main.ts"
     },
     "dependencies": {
-        "@jest/types": "29.6.1",
-        "@types/jest": "29.5.3",
-        "axios": "^1.4.0",
+        "@jest/types": "29.6.3",
+        "@types/jest": "29.5.7",
+        "axios": "^1.6.0",
         "date-fns": "^2.30.0",
         "date-fns-tz": "^2.0.0",
         "dotenv": "^16.3.1",
         "path": "^0.12.7",
-        "pino": "8.14.2",
+        "pino": "8.16.1",
         "safe-stable-stringify": "2.4.3",
-        "telegraf": "^4.12.2",
+        "telegraf": "^4.15.0",
         "ts-node": "^10.9.1",
-        "tslib": "^2.6.1"
+        "tslib": "^2.6.2"
     },
     "devDependencies": {
-        "@types/node": "^20.4.5",
-        "jest": "29.6.2",
+        "@types/node": "^20.8.10",
+        "jest": "29.7.0",
         "jest-ts-auto-mock": "^2.1.0",
         "ts-auto-mock": "^3.7.1",
         "ts-jest": "^29.1.1",
         "tsconfig-paths": "^4.2.0",
         "ttypescript": "^1.5.15",
-        "typescript": "^5.1.6"
+        "typescript": "^5.2.2"
     },
     "packageManager": "pnpm@8.6.7"
 }

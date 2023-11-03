@@ -21,11 +21,7 @@ const config: Config.InitialOptions = {
         ],
         "testMatch": [
             "*.(test|spec).(ts|js)"
-        ],
-        "ts-jest": {
-            "tsconfig": "tsconfig.json",
-            "compiler": "ttypescript",
-        }
+        ]
     }
 };
 export default config;
