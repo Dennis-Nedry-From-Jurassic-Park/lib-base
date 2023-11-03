@@ -1,1 +1,1 @@
-# ms-base
+# lib-base
