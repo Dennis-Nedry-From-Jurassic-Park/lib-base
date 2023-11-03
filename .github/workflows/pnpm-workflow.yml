@@ -28,12 +28,12 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc -i"
-          SOURCE: "dist/"
+          SOURCE: "."
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: "/deploy/"
           EXCLUDE: "/dist/, /node_modules/"
-          
+
 #          SCRIPT_BEFORE: |
 #            whoami
 #            ls -al
