@@ -15,3 +15,12 @@ export const now_iso = () => format(new Date(), "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
 export const getTimestampInSeconds = () => {
     return Math.floor(Date.now() / 1000)
 }
+
+export const getMillisFromEndOfDay =() => {
+    const now = Date.now();
+    const endOfDay = new Date();
+    endOfDay.setHours(23, 59, 59, 999);
+    const nowInMillis = now;
+    const endOfDayInMillis = endOfDay.getTime();
+    return endOfDayInMillis - nowInMillis // millisFromEndOfDay
+}
