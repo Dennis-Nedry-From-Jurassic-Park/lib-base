@@ -1,7 +1,7 @@
-import {now_utc} from "./datetime/dt";
+import {unix_to_dt} from "./datetime/dt";
 import {DAY} from "./constants/date.time.formats";
 
-console.log(now_utc());
+console.log(unix_to_dt("1711957727"));
 
 let obj: any[] = []
 console.log(DAY);
