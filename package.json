@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "private": true,
     "license": "MIT",
-    "main": "./dist/index.js",
+    "main": "index.js",
     "source": "./index.ts",
     "types": "./index.ts",
     "scripts": {
